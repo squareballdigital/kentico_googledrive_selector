@@ -1,0 +1,72 @@
+.cloud-control {
+    font-family: "Segoe UI", Arial;
+}
+
+.cloud-control button {
+    position: relative;
+    cursor: pointer;
+    width: 11.6em;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #DDD;
+    padding: .9em .75em .9em 3.6em;
+    font-size: 15px;
+    color: #555;
+}
+
+.cloud-control button[disabled] {
+    opacity: .5;
+}
+
+.cloud-control button::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/cloud-icons.png');
+    background-size: 100% 300%;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: .5em;
+}
+
+.cloud-control.google-drive button::before {
+    background-position: 0 0;
+}
+
+.cloud-control.dropbox button::before {
+    background-position: 0 -100%;
+}
+
+.cloud-control.one-drive button::before {
+    background-position: 0 -200%;
+}
+
+.cloud-control button sup {
+    font-size: 8px;
+}
+
+.cloud-control .file-info {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    margin-left: 1.5em;
+}
+
+
+.cloud-control .file-info .file-title {
+    font-weight: normal;
+    text-decoration: underline;
+    margin-left: 1.15em;
+}
+
+.cloud-control .file-info .btn-remove {
+    cursor: pointer;
+    display: inline-block;
+    background: #E4E4E4;
+    margin-left: 14px;
+    font-style: normal;
+    padding: 0 4px;
+}

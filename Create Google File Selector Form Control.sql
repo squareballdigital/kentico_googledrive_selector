@@ -1,0 +1,69 @@
+INSERT INTO [dbo].[CMS_FormUserControl]
+           ([UserControlDisplayName]
+           ,[UserControlCodeName]
+           ,[UserControlFileName]
+           ,[UserControlForText]
+           ,[UserControlForLongText]
+           ,[UserControlForInteger]
+           ,[UserControlForDecimal]
+           ,[UserControlForDateTime]
+           ,[UserControlForBoolean]
+           ,[UserControlForFile]
+           ,[UserControlShowInBizForms]
+           ,[UserControlDefaultDataType]
+           ,[UserControlDefaultDataTypeSize]
+           ,[UserControlShowInDocumentTypes]
+           ,[UserControlShowInSystemTables]
+           ,[UserControlShowInWebParts]
+           ,[UserControlShowInReports]
+           ,[UserControlGUID]
+           ,[UserControlLastModified]
+           ,[UserControlForGuid]
+           ,[UserControlShowInCustomTables]
+           ,[UserControlForVisibility]
+           ,[UserControlParameters]
+           ,[UserControlForDocAttachments]
+           ,[UserControlForLongInteger]
+           ,[UserControlResourceID]
+           ,[UserControlType]
+           ,[UserControlParentID]
+           ,[UserControlDescription]
+           ,[UserControlThumbnailGUID]
+           ,[UserControlPriority]
+           ,[UserControlIsSystem])
+     VALUES
+           (N'Google Drive File Selector'
+           ,N'GoogleDriveFileSelector'
+           ,'~/CMSFormControls/SquareballDigital/CloudFileSelectors/GoogleDrive/GoogleDrive.ascx'
+           ,1
+           ,1
+           ,0
+           ,0
+           ,0
+           ,0
+           ,1
+           ,1
+           ,'Text'
+           ,500
+           ,1
+           ,1
+           ,1
+           ,1
+           ,NEWID()
+           ,GETDATE()
+           ,0
+           ,1
+           ,0
+           ,N'<form version="2"><field column="GoogleClientID" visible="true" columntype="text" columnsize="200" publicfield="false" guid="' + CONVERT(varchar(50), NEWID())+ '" displayinsimplemode="true" reftype="Required" resolvedefaultvalue="False"><properties><fielddescription>Turn on Drive API and Drive SDK in API &amp; Auth/APIs app setting https://console.developers.google.com/project</fielddescription><fieldcaption>Google Drive Client ID</fieldcaption></properties><settings><Trim>False</Trim><AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected><FilterMode>False</FilterMode><AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem><AutoCompleteEnableCaching>False</AutoCompleteEnableCaching><controlname>TextBoxControl</controlname></settings></field></form>'		   
+           ,1
+           ,0
+           ,NULL
+           ,2
+           ,NULL
+           ,NULL
+           ,NULL
+           ,100
+           ,0)
+GO
+
+
